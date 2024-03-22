@@ -1,0 +1,33 @@
+<div id="container" class="flex flex-col md:flex-row">
+        <div id="left-divider" class="flex flex-col justify-between bg-red-200">
+            <div id="description" class="w-auto h-fit">
+                <h1 class="text-white text-4xl font-mono">Ravfore Flores</h1>
+                <h3 class="text-white text-base font-mono">UI/UX | Frontend Engineer</h3>
+                <p class="text-slate-500 text-sm font-mono max-w-[22rem]">I build responsive, simplified yet elegant products, and digital experiences for the web and mobile.</p>
+            </div>
+            <div id="links">
+                <ul class="text-sm font-mono">
+                    <li class="before:content-[''] before:inline-block before:align-middle before:w-7 before:h-[0.9px] before:mr-2 before:bg-gray-600 hover:before:w-14 hover:before:bg-white hover:before:duration-300 hover:before:ease-in-out text-slate-500 hover:text-white w-fit">ABOUT</li>
+                    <li class="before:content-[''] before:inline-block before:align-middle before:w-7 before:h-[0.9px] before:mr-2 before:bg-gray-600 hover:before:w-14 hover:before:bg-white hover:before:duration-300 hover:before:ease-in-out text-slate-500 hover:text-white w-fit">TECHNOLOGIES</li>
+                    <li class="before:content-[''] before:inline-block before:align-middle before:w-7 before:h-[0.9px] before:mr-2 before:bg-gray-600 hover:before:w-14 hover:before:bg-white hover:before:duration-300 hover:before:ease-in-out text-slate-500 hover:text-white w-fit">EXPERIENCE</li>
+                    <li class="before:content-[''] before:inline-block before:align-middle before:w-7 before:h-[0.9px] before:mr-2 before:bg-gray-600 hover:before:w-14 hover:before:bg-white hover:before:duration-300 hover:before:ease-in-out text-slate-500 hover:text-white w-fit">PROJECTS</li>
+                </ul>
+            </div>
+            <div id="icons" class="flex flex-row gap-x-3">
+                <img src="Vector.png" alt="linkedin" class="w-6 h-auto">
+                <img src="github-mark-white 1.png" alt="github" class="w-6 h-auto">
+            </div>
+        </div>
+        <div id="right-divider" class="flex flex-col w-1/2 h-full pt-16 pb-16 pr-28 bg-blue-200">
+            <div id="about" class="h-fit">
+                <p class="text-slate-500 text-sm font-mono w-fit">
+                    Hola! I'm Rave. A passionate Product Designer and an aspiring Software Engineer from the Philippines, transforming the world one pixel at a time.
+                </p>
+            </div>
+            <div id="technologies">
+                <h3 class="font-mono text-orange-500">Technologies</h3>
+            </div>
+        </div>
+    </div>
+
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
