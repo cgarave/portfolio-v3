@@ -12,19 +12,28 @@
 </head>
 <body class="h-screen w-full bg-zinc-950 cursor-default">
     <div id="container" class="flex flex-col md:flex-row">
-        <div id="left" class="h-fit w-full p-5 sm:p-20 md:h-full md:w-1/2">
+        <div id="left" class="  flex flex-col 
+                                h-fit w-full p-5
+                                sm:pl-60 sm:pt-20 sm:pb-20 sm:h-screen sm:w-1/2 sm:justify-between">
             <div id="description" class="text-white font-sans leading-none">
                 <h1 class="text-4xl mb-5 font-bold">Rave Flores</h1>
                 <h3 class="text-base mb-5 font-medium">UI/UX | Frontend Engineer</h3>
                 <p class="text-sm mb-5 text-slate-400 max-w-96">I build responsive, simplified yet elegant products, and digital experiences for the web and mobile.</p>
             </div>
-            <div id="nav"></div>
-            <div id="links" class="text-white font-sans text-sm h-fit flex flex-row gap-x-2 mb-20">
+            <div id="nav" class="hidden sm:block">
+                <ul class="text-sm font-mono">
+                    <li class="before:content-[''] before:inline-block before:align-middle before:w-7 before:h-[0.9px] before:mr-2 before:bg-gray-600 hover:before:w-14 hover:before:bg-white hover:before:duration-300 hover:before:ease-in-out text-slate-500 hover:text-white w-fit">ABOUT</li>
+                    <li class="before:content-[''] before:inline-block before:align-middle before:w-7 before:h-[0.9px] before:mr-2 before:bg-gray-600 hover:before:w-14 hover:before:bg-white hover:before:duration-300 hover:before:ease-in-out text-slate-500 hover:text-white w-fit">TECHNOLOGIES</li>
+                    <li class="before:content-[''] before:inline-block before:align-middle before:w-7 before:h-[0.9px] before:mr-2 before:bg-gray-600 hover:before:w-14 hover:before:bg-white hover:before:duration-300 hover:before:ease-in-out text-slate-500 hover:text-white w-fit">EXPERIENCE</li>
+                    <li class="before:content-[''] before:inline-block before:align-middle before:w-7 before:h-[0.9px] before:mr-2 before:bg-gray-600 hover:before:w-14 hover:before:bg-white hover:before:duration-300 hover:before:ease-in-out text-slate-500 hover:text-white w-fit">PROJECTS</li>
+                </ul>
+            </div>
+            <div id="links" class="text-white font-sans text-sm h-fit flex flex-row gap-x-2 mb-20 sm:mb-0 sm:mt-96">
                 <a href="#" class="text-slate-300 text-sm font-light pt-2 pb-2 pl-4 pr-4 rounded-full bg-violet-900 bg-opacity-40 inline-block border border-violet-800"><p>Github</p></a>
                 <a href="#" class="text-slate-300 text-sm font-light pt-2 pb-2 pl-4 pr-4 rounded-full bg-violet-900 bg-opacity-40 inline-block border border-violet-800"><p>LinkedIn</p></a>
             </div>
         </div>
-        <div id="right" class="block h-fit w-full md:w-1/2 p-5 sm:p-20">
+        <div id="right" class="block h-fit w-full sm:w-1/2 p-5 sm:pr-60 sm:pt-20 sm:pb-20">
             <div id="about" class="flex flex-col gap-y-2 font-sans leading-none h-fit">
                 <h3 class="text-violet-500 text-base font-semibold">About</h3>
                 <p class="text-slate-400 text-sm">Hola! I'm Rave. A passionate Product Designer and an aspiring Software Engineer from the Philippines, transforming the world one pixel at a time.</p>
