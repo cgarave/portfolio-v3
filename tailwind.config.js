@@ -14,7 +14,17 @@ module.exports = {
     fontFamily: {
       'montserrat': 'Montserrat'
     },
-    extend: {},
+    extend: {
+      // animation: {
+      //   'transformz': 'transformX 3s linear'
+      // },
+      // keyframes: {
+      //   'transformX': {
+      //     '0%': {transform: 'translateX(0px) translateY(0px)'},
+      //     '100%': {transform: 'translateX(500px) translateY(500px)'},
+      //   }
+      // }
+    },
   },
   plugins: [],
 }
