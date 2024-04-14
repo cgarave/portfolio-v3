@@ -11,22 +11,69 @@ const aboutBtn = document.getElementById("abt-button").addEventListener("click",
     document.getElementById("tech-button").classList.value = actionBtn.inactive;
     document.getElementById("exp-button").classList.value = actionBtn.inactive;
     document.getElementById("proj-button").classList.value = actionBtn.inactive;
+    console.log(e);
 });
 const techBtn = document.getElementById("tech-button").addEventListener("click", (e) => {
     document.getElementById("tech-button").classList.value = actionBtn.active;
     document.getElementById("abt-button").classList.value = actionBtn.inactive;
     document.getElementById("exp-button").classList.value = actionBtn.inactive;
     document.getElementById("proj-button").classList.value = actionBtn.inactive;
+    console.log(e);
 });
 const expBtn = document.getElementById("exp-button").addEventListener("click", (e) => {
     document.getElementById("exp-button").classList.value = actionBtn.active;
     document.getElementById("abt-button").classList.value = actionBtn.inactive;
     document.getElementById("tech-button").classList.value = actionBtn.inactive;
     document.getElementById("proj-button").classList.value = actionBtn.inactive;
+    console.log(e);
 });
 const projBtn = document.getElementById("proj-button").addEventListener("click", (e) => {
     document.getElementById("proj-button").classList.value = actionBtn.active;
     document.getElementById("abt-button").classList.value = actionBtn.inactive;
     document.getElementById("tech-button").classList.value = actionBtn.inactive;
     document.getElementById("exp-button").classList.value = actionBtn.inactive;
+    console.log(e);
 });
+
+let circle = document.getElementById("circle");
+
+window.addEventListener("mousemove", (e) => {
+    
+    let x = e.clientX + "px";
+    let y = e.clientY + "px"
+
+    circle.style.left = e.clientX - 104 + "px";
+    circle.style.top = e.clientY - 104 + "px";
+
+    //circle.classList.replace('top-[0px]', `top-[${y}]`)
+    //circle.classList.replace('left-[0px]', `left-[${x}]`)
+    //console.log(circle);
+    
+    
+})
+window.addEventListener("scroll", (e) => {
+    console.log(window.scrollY);
+    if(window.scrollY <= 30){
+        document.getElementById("abt-button").classList.value = actionBtn.active;
+        document.getElementById("tech-button").classList.value = actionBtn.inactive;
+        document.getElementById("exp-button").classList.value = actionBtn.inactive;
+        document.getElementById("proj-button").classList.value = actionBtn.inactive;
+    } else if(window.scrollY >= 170 && window.scrollY <= 300) {
+        document.getElementById("tech-button").classList.value = actionBtn.active;
+        document.getElementById("abt-button").classList.value = actionBtn.inactive;
+        document.getElementById("exp-button").classList.value = actionBtn.inactive;
+        document.getElementById("proj-button").classList.value = actionBtn.inactive;
+    } else if(window.scrollY >= 410 && window.scrollY <= 900){
+        document.getElementById("exp-button").classList.value = actionBtn.active;
+        document.getElementById("abt-button").classList.value = actionBtn.inactive;
+        document.getElementById("tech-button").classList.value = actionBtn.inactive;
+        document.getElementById("proj-button").classList.value = actionBtn.inactive;
+    } else if (window.scrollY >= 1100){
+        document.getElementById("proj-button").classList.value = actionBtn.active;
+        document.getElementById("abt-button").classList.value = actionBtn.inactive;
+        document.getElementById("tech-button").classList.value = actionBtn.inactive;
+        document.getElementById("exp-button").classList.value = actionBtn.inactive;
+    }
+})
+
+
