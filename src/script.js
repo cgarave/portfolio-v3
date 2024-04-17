@@ -44,11 +44,6 @@ window.addEventListener("mousemove", (e) => {
 
     circle.style.left = e.clientX - 104 + "px";
     circle.style.top = e.clientY - 104 + "px";
-
-    //circle.classList.replace('top-[0px]', `top-[${y}]`)
-    //circle.classList.replace('left-[0px]', `left-[${x}]`)
-    //console.log(circle);
-    
     
 })
 window.addEventListener("scroll", (e) => {
