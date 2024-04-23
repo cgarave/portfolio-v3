@@ -39,8 +39,8 @@ let circle = document.getElementById("circle");
 
 window.addEventListener("mousemove", (e) => {
     
-    let x = e.clientX + "px";
-    let y = e.clientY + "px"
+    //let x = e.clientX + "px";
+    //let y = e.clientY + "px"
 
     circle.style.left = e.clientX - 104 + "px";
     circle.style.top = e.clientY - 104 + "px";
